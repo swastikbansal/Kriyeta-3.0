@@ -54,7 +54,8 @@ ROOT_URLCONF = 'Prashiksha.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / r"prashiksha_react\build"],
+        # 'DIRS': [BASE_DIR / r"prashiksha_react\build"],
+        'DIRS': [BASE_DIR / "template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,5 +124,6 @@ STATIC_URL = 'prashiksha_react/build/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR / r"prashiksha_react\build\static",
+    # BASE_DIR / r"prashiksha_react\build\static",
+    BASE_DIR / "static",
 ]
