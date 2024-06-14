@@ -8,7 +8,7 @@ class UserModel(models.Model) :
     email = models.EmailField(max_length=100)
     phone = models.CharField(max_length=100)
     country = models.CharField(max_length = 100)
-    date = models.DateField(auto_now=False, auto_now_add=False, default=datetime.day())
+    date = models.DateField()
 
     def __str__(self):
         return self.username
